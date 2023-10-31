@@ -1,9 +1,9 @@
 import firebase from "firebase";
 
 var firebaseConfig = {
-  apiKey: "", // Add API Key
-  databaseURL:"" // Add databaseURL
-};
+  apiKey: "AIzaSyDXqjhLdjEOFQe1G4b5Dk4janRaHrNP36o",
+  databaseURL : 'https://meeting-64f1c-default-rtdb.asia-southeast1.firebasedatabase.app/'
+ };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 

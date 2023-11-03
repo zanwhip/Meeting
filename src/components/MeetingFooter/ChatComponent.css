@@ -1,0 +1,33 @@
+/* ChatComponent.css */
+
+.chat-component {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .chat-messages {
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .sender-name {
+    font-weight: bold;
+  }
+  
+  .your-message {
+    text-align: right;
+  }
+  
+  /* Tùy chỉnh kiểu dáng theo nhu cầu của bạn */
+  

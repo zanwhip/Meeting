@@ -2,16 +2,16 @@ import React from "react";
 import Card from "../../Shared/Card/Card.component";
 import { faMicrophoneSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Participant.css";
+import "./Participant.css";  
 
-export const Participant = (props) => {
-  const {
-    curentIndex,
-    currentParticipant,
-    hideVideo,
-    videoRef,
-    showAvatar,
-    currentUser,
+export const Participant = (props) => { 
+  const { 
+    curentIndex, 
+    currentParticipant, 
+    hideVideo, 
+    videoRef, 
+    showAvatar, 
+    currentUser, 
   } = props;
   if (!currentParticipant) return <></>;
   return (
@@ -24,12 +24,12 @@ export const Participant = (props) => {
           autoPlay
           playsInline
         ></video>
-        {!currentParticipant.audio && (
+        {!currentParticipant.audio && ( 
           <FontAwesomeIcon
             className="muted"
-            icon={faMicrophoneSlash}
+            icon={faMicrophoneSlash} 
             title="Muted"
-          />
+          /> 
         )}
         {showAvatar && (
           <div
@@ -43,7 +43,7 @@ export const Participant = (props) => {
           {currentParticipant.name}
           {currentUser ? "(You)" : ""}
         </div>
-      </Card>
+      </Card> 
     </div>
   );
 };

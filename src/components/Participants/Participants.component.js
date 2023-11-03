@@ -39,11 +39,11 @@ const Participants = (props) => {
     const isCurrentUser = currentParticipant.currentUser;
     if (isCurrentUser) {
       return null;
-    }
-    const pc = currentParticipant.peerConnection;
-    const remoteStream = new MediaStream();
+    } 
+    const pc = currentParticipant.peerConnection; 
+    const remoteStream = new MediaStream(); 
     let curentIndex = index;
-    if (pc) {
+    if (pc) { 
       pc.ontrack = (event) => {
         event.streams[0].getTracks().forEach((track) => {
           remoteStream.addTrack(track);

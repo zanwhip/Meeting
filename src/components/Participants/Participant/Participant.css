@@ -1,21 +1,21 @@
 
 
-  .video{
-    background-color: #353b48;
+  .video{ 
+    background-color: #353b48; 
     height: 100%;
-    width: 100%;
-    position: relative;
-    object-fit: cover;
+    width: 100%; 
+    position: relative; 
+    object-fit: cover; 
     border-radius: 5px;
-  }
-
+  } 
+ 
   .participant {
-    background-color: #353b48;
-    height: 100%;
+    background-color: #353b48;  
+    height: 100%; 
     width: 100%;
-    position: relative;
-    border-radius: 5px;
-    min-height: 200px
+    position: relative; 
+    border-radius: 5px; 
+    min-height: 200px 
   }
 
   .muted {

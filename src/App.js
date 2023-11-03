@@ -1,24 +1,24 @@
-import MainScreen from "./components/MainScreen/MainScreen.component";
-import firepadRef, { db, userName } from "./server/firebase";
-import "./App.css";
-import { useEffect } from "react";
-import {
-  setMainStream,
-  addParticipant,
-  setUser,
-  removeParticipant,
-  updateParticipant,
-} from "./store/actioncreator";
-import { connect } from "react-redux";
-
+import MainScreen from "./components/MainScreen/MainScreen.component"; 
+import firepadRef, { db, userName } from "./server/firebase"; 
+import "./App.css";  
+import { useEffect } from "react"; 
+import { 
+  setMainStream,  
+  addParticipant, 
+  setUser,  
+  removeParticipant, 
+  updateParticipant,  
+} from "./store/actioncreator"; 
+import { connect } from "react-redux"; 
+ 
 function App(props) {
-  const getUserStream = async () => {
-    const localStream = await navigator.mediaDevices.getUserMedia({
+  const getUserStream = async () => { 
+    const localStream = await navigator.mediaDevices.getUserMedia({ 
       audio: true,
       video: true,
-    });
+    }); 
 
-    return localStream;
+    return localStream; 
   };
   useEffect(async () => {
     const stream = await getUserStream();
